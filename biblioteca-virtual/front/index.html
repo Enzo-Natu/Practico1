@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BiblioVirtual — Tu biblioteca digital personal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-biblio">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">
+        <div class="logo-icon">
+          <i class="bi bi-book-half" style="color:#1E2A4A; font-size:1.1rem;"></i>
+        </div>
+        BiblioVirtual
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#catalogo">Géneros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#catalogo">Audiolibros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        </ul>
+        <div class="d-flex flex-wrap gap-2 mt-3 mt-lg-0">
+          <a href="#" class="btn btn-login">Ingresar</a>
+          <a href="#" class="btn btn-registrarse">Registrarse</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio">
+    <div class="hero-deco"></div>
+    <div class="hero-deco-2"></div>
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <div class="hero-badge">✨ Tu biblioteca sin límites</div>
+          <h1 class="hero-title">
+            Descubre el Universo<br>
+            de los <span>Libros</span>
+          </h1>
+          <p class="hero-desc">
+            Miles de libros, revistas y audiolibros al alcance de tu mano.
+            Accede desde cualquier dispositivo, en cualquier momento.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#catalogo" class="btn-hero-primary">
+              <i class="bi bi-search me-2"></i>Explorar Catálogo
+            </a>
+            <a href="#nosotros" class="btn-hero-secondary">
+              <i class="bi bi-play-circle me-2"></i>Ver Demo
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">50K+</span>
+              <span class="stat-label">Títulos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">120K+</span>
+              <span class="stat-label">Usuarios</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Valoración</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="book-panel">
+            <div class="float-badge float-badge-1">
+              <i class="bi bi-book me-1"></i> Leyendo ahora...
+            </div>
+            <div class="book-cover mx-auto">
+              <div class="book-cover-icon">📖</div>
+              <div class="book-cover-title">El Arte de Pensar</div>
+              <div class="book-cover-author">Carlos Ruiz Zafón</div>
+            </div>
+            <div class="book-rating mt-2">★ 4.9 / 5.0</div>
+            <div class="float-badge float-badge-2">
+              <i class="bi bi-headphones me-1"></i> Audio disponible
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Nuestras ventajas</span>
+        <h2 class="section-title">¿Por qué BiblioVirtual?</h2>
+        <p class="section-subtitle">Todo lo que necesitás para leer más y mejor.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-xl-3">
+          <div class="feat-card">
+            <div class="feat-icon">📚</div>
+            <div class="feat-title">Biblioteca Completa</div>
+            <p class="feat-desc">Más de 50.000 títulos en un solo lugar, organizados por género y categoría.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="feat-card">
+            <div class="feat-icon">📱</div>
+            <div class="feat-title">Multi-Dispositivo</div>
+            <p class="feat-desc">Celular, tablet o PC sincronizados. Tu progreso viaja con vos.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="feat-card">
+            <div class="feat-icon">🔖</div>
+            <div class="feat-title">Marcadores y Notas</div>
+            <p class="feat-desc">Guardá tu progreso, creá listas personales y tomá notas directamente en el texto.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="feat-card">
+            <div class="feat-icon">✈️</div>
+            <div class="feat-title">Sin Conexión</div>
+            <p class="feat-desc">Descargá tus libros favoritos y leé sin necesidad de internet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="catalog-label">Nuestro Catálogo</span>
+        <h2 class="section-title">Explorá nuestra colección</h2>
+        <p class="section-subtitle">Libros, revistas y audiolibros para todos los gustos.</p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="libro">Libros</button>
+        <button class="filter-btn" data-filter="revista">Revistas</button>
+        <button class="filter-btn" data-filter="audio">Audiolibros</button>
+      </div>
+      <div class="row g-3" id="catalog-grid">
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="libro">
+          <div class="book-card">
+            <div class="book-card-cover cover-libro">
+              <i class="bi bi-book cover-icon"></i>
+              <span class="book-type-badge badge-libro">Libro</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Literatura</span>
+                <span class="book-rating-small">★ 4.8</span>
+              </div>
+              <div class="book-card-title">Cien Años de Soledad</div>
+              <div class="book-card-author">G. García Márquez</div>
+              <div class="book-card-meta">471 pág.</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Leer ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="libro">
+          <div class="book-card">
+            <div class="book-card-cover cover-libro">
+              <i class="bi bi-book cover-icon"></i>
+              <span class="book-type-badge badge-libro">Libro</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Ciencia</span>
+                <span class="book-rating-small">★ 4.9</span>
+              </div>
+              <div class="book-card-title">Breve Historia del Tiempo</div>
+              <div class="book-card-author">Stephen Hawking</div>
+              <div class="book-card-meta">212 pág.</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Leer ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="revista">
+          <div class="book-card">
+            <div class="book-card-cover cover-revista">
+              <i class="bi bi-journal cover-icon"></i>
+              <span class="book-type-badge badge-revista">Revista</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Naturaleza</span>
+                <span class="book-rating-small">★ 4.7</span>
+              </div>
+              <div class="book-card-title">National Geographic</div>
+              <div class="book-card-author">Revista Mensual</div>
+              <div class="book-card-meta">96 pág.</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Leer ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="audio">
+          <div class="book-card">
+            <div class="book-card-cover cover-audio">
+              <i class="bi bi-headphones cover-icon"></i>
+              <span class="book-type-badge badge-audio">Audio</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Filosofía</span>
+                <span class="book-rating-small">★ 5.0</span>
+              </div>
+              <div class="book-card-title">El Alquimista</div>
+              <div class="book-card-author">Paulo Coelho</div>
+              <div class="book-card-meta">7h 22min</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Escuchar ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="libro">
+          <div class="book-card">
+            <div class="book-card-cover cover-historia">
+              <i class="bi bi-book cover-icon"></i>
+              <span class="book-type-badge badge-libro">Libro</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Historia</span>
+                <span class="book-rating-small">★ 4.8</span>
+              </div>
+              <div class="book-card-title">Sapiens</div>
+              <div class="book-card-author">Yuval N. Harari</div>
+              <div class="book-card-meta">443 pág.</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Leer ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="revista">
+          <div class="book-card">
+            <div class="book-card-cover cover-revista">
+              <i class="bi bi-journal cover-icon"></i>
+              <span class="book-type-badge badge-revista">Revista</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Tecnología</span>
+                <span class="book-rating-small">★ 4.6</span>
+              </div>
+              <div class="book-card-title">Wired Magazine</div>
+              <div class="book-card-author">Revista Tech</div>
+              <div class="book-card-meta">80 pág.</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Leer ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="audio">
+          <div class="book-card">
+            <div class="book-card-cover cover-audio">
+              <i class="bi bi-headphones cover-icon"></i>
+              <span class="book-type-badge badge-audio">Audio</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Desarrollo</span>
+                <span class="book-rating-small">★ 4.9</span>
+              </div>
+              <div class="book-card-title">Atomic Habits</div>
+              <div class="book-card-author">James Clear</div>
+              <div class="book-card-meta">5h 55min</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Escuchar ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 book-item" data-type="libro">
+          <div class="book-card">
+            <div class="book-card-cover cover-libro">
+              <i class="bi bi-book cover-icon"></i>
+              <span class="book-type-badge badge-libro">Libro</span>
+            </div>
+            <div class="book-card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="book-genre">Distopía</span>
+                <span class="book-rating-small">★ 4.9</span>
+              </div>
+              <div class="book-card-title">1984</div>
+              <div class="book-card-author">George Orwell</div>
+              <div class="book-card-meta">328 pág.</div>
+            </div>
+            <div class="book-card-footer">
+              <button class="btn-leer">Leer ahora</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="logo-icon">
+              <i class="bi bi-book-half" style="color:#1E2A4A;font-size:1.1rem;"></i>
+            </div>
+            <span class="footer-brand">BiblioVirtual</span>
+          </div>
+          <p class="footer-desc">
+            Tu biblioteca digital personal. Accedé a miles de contenidos
+            desde donde estés.
+          </p>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <div class="footer-heading">Catálogo</div>
+          <ul class="footer-links">
+            <li><a href="#catalogo">Libros</a></li>
+            <li><a href="#catalogo">Revistas</a></li>
+            <li><a href="#catalogo">Audiolibros</a></li>
+            <li><a href="#catalogo">Novedades</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Cuenta</div>
+          <ul class="footer-links">
+            <li><a href="#">Mi Perfil</a></li>
+            <li><a href="#">Mis Listas</a></li>
+            <li><a href="#">Historial</a></li>
+            <li><a href="#">Suscripción</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Soporte</div>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2 pb-4">
+        <span>© 2025 BiblioVirtual — Todos los derechos reservados.</span>
+        <span>
+          <a href="#">Privacidad</a> &nbsp;|&nbsp;
+          <a href="#">Términos de Uso</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/js/main.js"></script>
+</body>
+</html>
